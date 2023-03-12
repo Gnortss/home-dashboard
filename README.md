@@ -1,11 +1,4 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/4refr0nt/svelte-mqtt-monitor)
 # Svelte MQTT Monitor
-
-![Svelte MQTT Monitor](https://raw.githubusercontent.com/4refr0nt/svelte-mqtt-monitor/master/image.png)
-
-## Demos
-
-[https://svelte-mqtt-monitor.vercel.app](https://svelte-mqtt-monitor.vercel.app/)
 
 ## Get started
 
