@@ -2,6 +2,7 @@
 	import type { OnCloseCallback, OnConnectCallback, OnErrorCallback, OnMessageCallback } from "mqtt";
   import { initMQTTClient, TopicNode } from "../utils";
   import RoomComponent from "$lib/components/dashboard/RoomComponent.svelte";
+	import GroupComponent from "$lib/components/dashboard/GroupComponent.svelte";
 
 	let connected = undefined;
   let messages = new TopicNode("");
@@ -49,7 +50,10 @@
   )
 </script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
+<div class="container min-h-70 flex justify-center items-stretch">
+  <GroupComponent>
+    <RoomComponent messages={messages}/>
+  </GroupComponent>
 	<RoomComponent messages={messages}/>
 	<RoomComponent messages={messages}/>
 </div>
